@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+.p1{
+    height: 50%;
+    width: 50%;
+    background-color: brown;
+}
+
+.p2{
+    height: 50%;
+    width: 50%;
+    background-color: thistle;
+}
