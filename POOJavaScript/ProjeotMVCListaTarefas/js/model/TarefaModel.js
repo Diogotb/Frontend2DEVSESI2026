@@ -14,7 +14,7 @@ export class TarefaModel{
 
     //métodos
     //adicioanr tarefa (create)
-    addTarefas(titulo){
+    addTarefa(titulo){
         const newTarefa = {
             id: this.currentId++,
             titulo: titulo,
