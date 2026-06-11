@@ -27,6 +27,13 @@
       "descricao": "Trabalhar com Design de Páginas Web",
       "salario": 5000,
       "id": "PxeeI7fYMYY"
+    },
+    {
+      "id": "AatqO7Wf3iY",
+      "nome": "",
+      "foto": "",
+      "descricao": "",
+      "salario": 0
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -22,7 +22,7 @@ export class Vagas implements OnInit {
 
   // método para Listar as Vagas (Controller)
   listarVagas(): void{
-    this._apiService.getVagas().subscribe(
+    this._apiService.getVagas().subscribe( // é o método do observable que permite fazer alguma coisa depois que estabeleceu a conexão
       (retornaVagas) => {
         this.vagas = retornaVagas.map(
           (e) => {
