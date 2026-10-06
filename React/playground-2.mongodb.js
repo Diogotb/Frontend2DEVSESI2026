@@ -32,4 +32,15 @@ db.getCollection("bibliotecaDiogoTB").updateMany({ genero: "Distopia" }, { $set:
 
 //PAsso 5 - todo livro que tiver +de 500 páginas - ganhe uma chave {edicao: "Longa"}
 
-db.getCollection("bibliotecaDiogoTB").updateMany({ paginas: {$gt: 500} }, { $set: {edicao: "Longa"} });
+bd.getCollection("bibliotecaDiogoTB").updateMany({ paginas: {$gt: 500} }, { $set: {edicao: "Longa"} });
+
+//Passo 6 - Criação de índices - melhora o desempenho das consultas
+
+bd.getCollection("bibliotecaDiogoTB").createIndex({autor:1});
+//facilita a busca por autor -> 1 permite busca crescente
+
+// utilização de indice composto
+bd.getCollection("bibliotecaDiogoTB").createIndex({autor:1, ano:-1});
+// autor em ordem crescente e ano em ordem decrescente
+
+//Passo 7 - 
